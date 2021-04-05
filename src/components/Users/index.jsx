@@ -7,9 +7,6 @@ export const User = ({data}) => {
          <img src={data.img} alt="" />
          <div className="age">{data.age}</div>
          <div className="country">{data.country}</div>
-         
-         
-
     </div>
     )
 }

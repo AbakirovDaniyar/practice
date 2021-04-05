@@ -21,7 +21,7 @@ export    const data = [
       {
         name: "Ilzat Ahmetov",
         age:18,
-        country: "Kyrgyztan",
+        country: "Kyrgyzstan",
         img: img2,
       },
       {
@@ -32,7 +32,7 @@ export    const data = [
       },
       {
         name: "Zlatan Ibragimovich",
-        age:16,
+        age:28,
         country: "Sweden",
         img: img4,
       },
@@ -74,7 +74,7 @@ export    const data = [
       },
       {
         name: "Anton Zemlyanuhin",
-        age: 26,
+        age: 17,
         country: "Kyrgyzstan",
         img: img11,
       },

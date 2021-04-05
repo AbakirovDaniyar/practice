@@ -43,6 +43,26 @@ function App() {
         return arr4.map((el,id) => {
           return <User data={el} key={id} color="darkred"/>
         });
+        // render 5
+        case "Kyrgyzstan":
+          let arr5 = data.filter((el) => {
+            return el.country === "Kyrgyzstan"
+          })
+
+          return arr5.map((el, id) => {
+            return <User data={el} key={id} color="darkred" />
+          })
+        
+        // render 6
+        case "Abroad":
+          let arr6 = data.filter((el) => {
+            return el.country !== "Kyrgyzstan"
+          })
+
+          return arr6.map((el, id) => {
+            return <User data={el} key={id} color="darkred" />
+          })
+
       default:
         return "";
     }
@@ -54,13 +74,13 @@ function App() {
       <div className = "btns-groups">
         {/* btn-1 */}
       <button className="btn"
-        onClick ={ ()=> setAge('18')}
+        onClick ={()=> setAge('18')}
         style={
           age >'18'?{backgroundColor: "sage"} : {backgroundColor: "none"}
         }
       >
         under-18 years </button>
-        <OnBtn/>
+        <OnBtn setAge={setAge} /> 
         {/* btn-2 */}
       <button  className="btn"
         onClick ={() => setAge('24')}
